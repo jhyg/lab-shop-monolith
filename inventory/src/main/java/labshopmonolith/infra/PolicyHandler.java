@@ -18,7 +18,7 @@ import labshopmonolith.domain.*;
 @Service
 @Transactional
 public class PolicyHandler{
-    @Autowired OrderRepository orderRepository;
+    @Autowired InventoryRepository inventoryRepository;
     
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString){}

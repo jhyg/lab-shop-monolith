@@ -48,6 +48,7 @@
                     </v-list-item>
 
 
+
                     <v-list-item
                         class="px-2"
                         key="inventories"
@@ -101,6 +102,7 @@
                                 </v-btn>
                             </v-card-actions>
                         </v-card>
+
                         <v-card
                             class="mx-auto"
                             style="height:300px; width:300px; margin-bottom:20px;"
