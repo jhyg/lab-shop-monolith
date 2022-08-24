@@ -21,6 +21,24 @@ public class InventoryController {
 
 
 
+    @RequestMapping(value = "inventories/{id}/decreaseinventory",
+        method = RequestMethod.PUT,
+        produces = "application/json;charset=UTF-8")
+    public Inventory decreaseInventory(@PathVariable(value = "id") Long id, @RequestBody DecreaseInventoryCommand decreaseInventoryCommand, HttpServletRequest request, HttpServletResponse response) throws Exception {
+            System.out.println("##### /inventory/decreaseInventory  called #####");
+            Optional<Inventory> optionalInventory = inventoryRepository.findById(id);
+            
+            optionalInventory.orElseThrow(()-> new Exception("No Entity Found"));
+            Inventory inventory = optionalInventory.get();
+            inventory.decreaseInventory(decreaseInventoryCommand);
+            
+            inventoryRepository.save(inventory);
+            return inventory;
+            
+    }
+    
+
+
 
     // keep
 }
