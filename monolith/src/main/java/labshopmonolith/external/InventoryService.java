@@ -10,8 +10,8 @@ import java.util.Date;
 
 @FeignClient(name="inventory", url="${api.url.inventory}")
 public interface InventoryService {
-    @RequestMapping(method= RequestMethod.POST, path="/inventories")
-    public void decreaseInventory(@RequestBody Inventory inventory);
+    @RequestMapping(method= RequestMethod.GET, path="/inventories/{id}")
+    public Inventory getInventory(@PathVariable("id") Long id);
 
     // keep
 
