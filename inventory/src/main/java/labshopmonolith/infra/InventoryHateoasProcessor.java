@@ -14,6 +14,7 @@ public class InventoryHateoasProcessor implements RepresentationModelProcessor<E
         model.add(Link.of(model.getRequiredLink("self").getHref() + "/decreaseinventory").withRel("decreaseinventory"));
         model.add(Link.of(model.getRequiredLink("self").getHref() + "/inventorytest").withRel("inventorytest"));
         model.add(Link.of(model.getRequiredLink("self").getHref() + "/intest2").withRel("intest2"));
+        model.add(Link.of(model.getRequiredLink("self").getHref() + "/intest23").withRel("intest23"));
 
         
         return model;

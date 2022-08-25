@@ -45,6 +45,8 @@ public class Inventory  {
     }
     public void intest2(){
     }
+    public void intest23(){
+    }
 
 
 
