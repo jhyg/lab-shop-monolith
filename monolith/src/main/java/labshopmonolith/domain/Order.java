@@ -72,6 +72,7 @@ public class Order  {
     }
     @PrePersist
     public void onPrePersist(){
+        // test ! ! !! !
         // Get request from Inventory
         //labshopmonolith.external.Inventory inventory =
         //    Application.applicationContext.getBean(labshopmonolith.external.InventoryService.class)
