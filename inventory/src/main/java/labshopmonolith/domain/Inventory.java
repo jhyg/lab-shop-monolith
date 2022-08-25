@@ -33,6 +33,7 @@ public class Inventory  {
     }
 
     public static InventoryRepository repository(){
+        // test !!
         InventoryRepository inventoryRepository = InventoryApplication.applicationContext.getBean(InventoryRepository.class);
         return inventoryRepository;
     }
