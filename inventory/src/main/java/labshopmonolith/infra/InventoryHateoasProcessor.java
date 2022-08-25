@@ -12,6 +12,8 @@ public class InventoryHateoasProcessor implements RepresentationModelProcessor<E
     @Override
     public EntityModel<Inventory> process(EntityModel<Inventory> model) {
         model.add(Link.of(model.getRequiredLink("self").getHref() + "/decreaseinventory").withRel("decreaseinventory"));
+        model.add(Link.of(model.getRequiredLink("self").getHref() + "/inventorytest").withRel("inventorytest"));
+        model.add(Link.of(model.getRequiredLink("self").getHref() + "/intest2").withRel("intest2"));
 
         
         return model;
