@@ -18,6 +18,7 @@ public class OrderHateoasProcessor implements RepresentationModelProcessor<Entit
         model.add(Link.of(model.getRequiredLink("self").getHref() + "/test5").withRel("test5"));
         model.add(Link.of(model.getRequiredLink("self").getHref() + "/test6").withRel("test6"));
         model.add(Link.of(model.getRequiredLink("self").getHref() + "/test777").withRel("test777"));
+        model.add(Link.of(model.getRequiredLink("self").getHref() + "/test88").withRel("test88"));
 
         
         return model;
