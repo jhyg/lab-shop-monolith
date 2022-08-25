@@ -116,5 +116,24 @@ public class OrderController {
 
 
 
+    @RequestMapping(value = "orders/{id}/test6",
+        method = RequestMethod.PUT,
+        produces = "application/json;charset=UTF-8")
+    public Order test6(@PathVariable(value = "id") Long id, HttpServletRequest request, HttpServletResponse response) throws Exception {
+            System.out.println("##### /order/test6  called #####");
+            Optional<Order> optionalOrder = orderRepository.findById(id);
+            
+            optionalOrder.orElseThrow(()-> new Exception("No Entity Found"));
+            Order order = optionalOrder.get();
+            order.test6();
+            
+            orderRepository.save(order);
+            return order;
+            
+    }
+    
+
+
+
     // keep
 }
