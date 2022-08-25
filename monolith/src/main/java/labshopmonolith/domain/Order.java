@@ -62,6 +62,7 @@ public class Order  {
 
         labshopmonolith.external.Inventory inventory = new labshopmonolith.external.Inventory();
         // mappings goes here
+        //test ! ! ! @ !@ @!@@! 
         MonolithApplication.applicationContext.getBean(labshopmonolith.external.InventoryService.class)
             .decreaseInventory(inventory);
 
@@ -82,7 +83,7 @@ public class Order  {
 
 
     public void test(){
-        //test 123 
+        //test 123 1!!!!
     }
     public void test2(){
     }
