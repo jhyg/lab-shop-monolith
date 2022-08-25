@@ -1,16 +1,9 @@
 package labshopmonolith.domain;
 
-<<<<<<< HEAD
-import java.util.Date;
-import java.util.List;
-import javax.persistence.*;
-import labshopmonolith.MonolithApplication;
-=======
 import labshopmonolith.domain.OrderPlaced;
 import labshopmonolith.MonolithApplication;
 import javax.persistence.*;
 import java.util.List;
->>>>>>> origin/template
 import lombok.Data;
 import java.util.Date;
 
@@ -63,7 +56,7 @@ public class Order  {
     }
     
     public void onPostPersist(){
-
+        // test !!! 
         //Following code causes dependency to external APIs
         // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
 
