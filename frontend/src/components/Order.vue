@@ -64,9 +64,9 @@
                     v-if="!editMode"
                     color="deep-purple lighten-2"
                     text
-                    @click="test"
+                    @click="test2222"
             >
-                Test
+                Test2222
             </v-btn>
             <v-btn
                     v-if="!editMode"
@@ -255,7 +255,7 @@
             change(){
                 this.$emit('input', this.value);
             },
-            async test() {
+            async test2222() {
                 try {
                     if(!this.offline) {
                         var temp = await axios.put(axios.fixUrl(this.value._links['test'].href))

@@ -24,13 +24,13 @@ public class OrderController {
     @RequestMapping(value = "orders/{id}/test",
         method = RequestMethod.PUT,
         produces = "application/json;charset=UTF-8")
-    public Order test(@PathVariable(value = "id") Long id, HttpServletRequest request, HttpServletResponse response) throws Exception {
-            System.out.println("##### /order/test  called #####");
+    public Order test2222(@PathVariable(value = "id") Long id, HttpServletRequest request, HttpServletResponse response) throws Exception {
+            System.out.println("##### /order/test2222  called #####");
             Optional<Order> optionalOrder = orderRepository.findById(id);
             
             optionalOrder.orElseThrow(()-> new Exception("No Entity Found"));
             Order order = optionalOrder.get();
-            order.test();
+            order.test2222();
             
             orderRepository.save(order);
             return order;
