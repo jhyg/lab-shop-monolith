@@ -34,6 +34,7 @@ public class Inventory  {
 
     public static InventoryRepository repository(){
         // test !!
+        //test22
         InventoryRepository inventoryRepository = InventoryApplication.applicationContext.getBean(InventoryRepository.class);
         return inventoryRepository;
     }
